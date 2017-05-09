@@ -10,8 +10,7 @@
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
   <script type="text/javascript">
-    var host = "tomaer.com";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
+    if (window.location.protocol != "https:")
         window.location.protocol = "https";
   </script>
 </head>
